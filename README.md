@@ -1,6 +1,11 @@
 # Casting Agency App
 This Casting Agency app is an example of an api for managing  movies and their actors.
 This does not have a frontend implemented yet.
+
+Heroku link
+```
+https://njood-capstone.herokuapp.com
+```
 ## Motivation for project
 The motivation of this project is to get the Nanodegree for the Full-Stack developer from Udacity.
 
