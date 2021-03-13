@@ -4,9 +4,9 @@ from functools import wraps
 from jose import jwt
 from urllib.request import urlopen
 #NOTE: I implemented this file with using auth.py which I submitted in the coffee shop project as a reference 
-AUTH0_DOMAIN = 'fsnd-njood.us.auth0.com'
-ALGORITHMS = ['RS256']
-API_AUDIENCE = 'MyCapstoneApi'
+AUTH0_DOMAIN = os.environ.get('AUTH0_DOMAIN')
+ALGORITHMS = os.environ.get['ALGORITHMS']
+API_AUDIENCE = os.environ.get('API_AUDIENCE')
 
 
 class AuthError(Exception):
