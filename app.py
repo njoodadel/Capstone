@@ -95,8 +95,6 @@ def create_app(test_config=None):
             'movie': movie.format()
         })
 
-#---------------------------------------#
-
 # Actors
     # Get Actors
     @app.route('/actors', methods=["GET"])
@@ -180,9 +178,7 @@ def create_app(test_config=None):
             'actor': actor.format()
         })
 
-
 # Error handling
-
     @app.errorhandler(400)
     def bad_request(error):
         return jsonify({

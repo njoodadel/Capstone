@@ -116,10 +116,7 @@ class AgencyTestCase(unittest.TestCase):
         data = json.loads(response.data)
         self.assertEqual(data['success'], False)
 
-
 # /actors tests
-
-
     def test_valid_get_actors(self):
         response = self.client().get(
             '/actors',
