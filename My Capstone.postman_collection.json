@@ -1,0 +1,486 @@
+{
+	"info": {
+		"_postman_id": "d9ac66ca-442d-4e7c-866c-3af2e5f27475",
+		"name": "My Capstone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Executive Producer",
+			"item": [
+				{
+					"name": "Add an actor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"njood2020\",\n    \"gender\":\"female\",\n    \"age\":\"22\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://njood-capstone.herokuapp.com/actors",
+							"protocol": "https",
+							"host": [
+								"njood-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add a movie",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"movie1\",\n    \"release_date\":\"55/443/322\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://njood-capstone.herokuapp.com/movies",
+							"protocol": "https",
+							"host": [
+								"njood-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get actors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://njood-capstone.herokuapp.com/actors",
+							"protocol": "https",
+							"host": [
+								"njood-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://njood-capstone.herokuapp.com/movies",
+							"protocol": "https",
+							"host": [
+								"njood-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit an actor",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"age\":\"23\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://njood-capstone.herokuapp.com/actors/2",
+							"protocol": "https",
+							"host": [
+								"njood-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit a movie",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"release_date\":\"2021\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://njood-capstone.herokuapp.com/movies/2",
+							"protocol": "https",
+							"host": [
+								"njood-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete an actor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://njood-capstone.herokuapp.com/actors/2",
+							"protocol": "https",
+							"host": [
+								"njood-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a movie",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://njood-capstone.herokuapp.com/movies/1",
+							"protocol": "https",
+							"host": [
+								"njood-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik16cmVYbjlWQ2NYa2NzTlQ4MmsyZCJ9.eyJpc3MiOiJodHRwczovL2ZzbmQtbmpvb2QudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDYwMDJjZmFkOWVlODhiMDA3NzZkYWZjNCIsImF1ZCI6Ik15Q2Fwc3RvbmVBcGkiLCJpYXQiOjE2MTU2MjQzNzMsImV4cCI6MTYxNTcxMDc3MywiYXpwIjoiYTdvODZXNVlCVmNCNUFLVkpsemRXOE1qWkhtZk5UbEoiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvciIsImRlbGV0ZTptb3ZpZSIsImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIiwicGF0Y2g6YWN0b3IiLCJwYXRjaDptb3ZpZSIsInBvc3Q6YWN0b3IiLCJwb3N0Om1vdmllIl19.cHgq1G3RdN8mOWqW3Vqp3-Bz4mI8u2BTMLJ76tKhGWjA2e-yMM9HMd9yuKQJz-RvdQkwpR-GqoA9GYlazR9HWMGF2Osha3gkEeF0no-BrPXTkXIGqNDQ0tBvXaA80B8ZPKR1S9gQPWt_UHg0n1QsJoF9cCWmOS0vCB-kMLyOxy_B9sauSkXXtJYOcs_ESJ4FIV29sn7saoYWXeLTiyiaHazV5LkyhdzaT9aHwut4UBUq1HmsxtC2DBc2z2Ec90CrEaVMXWpMbRA_ly0OaMRaKn1X5XW5v418FK3kgid0ph8tXjKpu7HUprx7FyqZcvwvKWZwLFbF_xRteOJ6YmzLmw",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Casting Director",
+			"item": [
+				{
+					"name": "Add an actor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"njood2020\",\n    \"gender\":\"female\",\n    \"age\":\"22\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://njood-capstone.herokuapp.com/actors",
+							"protocol": "https",
+							"host": [
+								"njood-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get actors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://njood-capstone.herokuapp.com/actors",
+							"protocol": "https",
+							"host": [
+								"njood-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://njood-capstone.herokuapp.com/movies",
+							"protocol": "https",
+							"host": [
+								"njood-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit an actor",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://njood-capstone.herokuapp.com/actors/2",
+							"protocol": "https",
+							"host": [
+								"njood-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit a movie",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://njood-capstone.herokuapp.com/movies/2",
+							"protocol": "https",
+							"host": [
+								"njood-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete an actor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://njood-capstone.herokuapp.com/actors/2",
+							"protocol": "https",
+							"host": [
+								"njood-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik16cmVYbjlWQ2NYa2NzTlQ4MmsyZCJ9.eyJpc3MiOiJodHRwczovL2ZzbmQtbmpvb2QudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDYwMGJlMGI5ZmZjYmUyMDA2YTg4NWNlNSIsImF1ZCI6Ik15Q2Fwc3RvbmVBcGkiLCJpYXQiOjE2MTU2MjQ0NTEsImV4cCI6MTYxNTcxMDg1MSwiYXpwIjoiYTdvODZXNVlCVmNCNUFLVkpsemRXOE1qWkhtZk5UbEoiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTphY3RvciIsImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIiwicGF0Y2g6YWN0b3IiLCJwYXRjaDptb3ZpZSIsInBvc3Q6YWN0b3IiXX0.ec_4qPzfjoXVKgWCcuLGKF4EyQD3lLEd8-nPP405OJP_wM2ZgkYxJ6YQMrivTiTV-8x4QQQWhOyIbqpe487I9E-K9_JLaauektyw1AuAM2FNIuNjc3S3rBByHKnfIYbMTK0CsgaX7-qybYMnbhJY42S7VnAf6QSmVYCsDCfLNwEvTbidTsObk9vqypc07RgNKIWgZYbprlwiUoCjiwKNjv6Li7tCFVKhaWyXsWDnYsFmHXxClUO4Y7MiTkqk7zFIOar-myA8D8W_IH7B8K0nTfTmTIZHUbyMaGJq-5jEI4Epm5uDTCjB_gNh3Rq41xCTx80ujly9UG2B9bOkcNxwrw",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Casting Assistant",
+			"item": [
+				{
+					"name": "Get actors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://njood-capstone.herokuapp.com/actors",
+							"protocol": "https",
+							"host": [
+								"njood-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://njood-capstone.herokuapp.com/movies",
+							"protocol": "https",
+							"host": [
+								"njood-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik16cmVYbjlWQ2NYa2NzTlQ4MmsyZCJ9.eyJpc3MiOiJodHRwczovL2ZzbmQtbmpvb2QudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDYwNGI1YzEwNjQ1NmM4MDA2OGMxZDNkMSIsImF1ZCI6Ik15Q2Fwc3RvbmVBcGkiLCJpYXQiOjE2MTU1NTI0MjYsImV4cCI6MTYxNTU1OTYyNiwiYXpwIjoiYTdvODZXNVlCVmNCNUFLVkpsemRXOE1qWkhtZk5UbEoiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIl19.bBeUJAJd2dlBLpXWa6sNi4F2NUmt5U9JC71T6OJvPjKW9qWX8jIq_qsJyeTCr8IL3s-htWGBvDo7RX0drIxocmj44NJ0Wab2dRqcq2ItyDWce1O1fRa3T8FJojy9eGnygoVxziCCVnhRGY-3_1-1kOCb141uqOt1Kh_Xi4_9f82UiQJIUh30U5JfmbGRpk2ijJfD7l0Rpoja5XqiLWevOgQ04iQz65McgL7CSxXCrFFbKd7A8VhNB6PHINlEosn9GDD11_-sTOfni66dRlWvQVE2jFyqTLqsm6ES1WP0G1Gg6X_sg5KWKOKGSkIqUy2QXsoOaaXfRbdUAQfnjzVyZQ",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	]
+}
